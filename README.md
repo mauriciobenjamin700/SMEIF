@@ -13,10 +13,10 @@ O projeto está dividido em 3 partes, sendo elas:
 
 Para executar o projeto, você deve seguir uma série de passos, sendo eles:
 
-1. Clone o repositório central usando `git clone https://github.com/mauriciobenjamin700/SMEIF.git`
+1. Clone o repositório central usando `git clone https://github.com/mauriciobenjamin700/SMEIF.git` ou `git@github.com:mauriciobenjamin700/SMEIF.git`
 2. Dentro do diretório central, clone o repositório da API e do FRONT usando:
-    - `git clone https://github.com/mauriciobenjamin700/SMEIF-API.git`
-    - `git clone https://github.com/mauriciobenjamin700/SMEIF-FRONT.git`
+    - `git clone https://github.com/mauriciobenjamin700/SMEIF-API.git` ou `git@github.com:mauriciobenjamin700/SMEIF-API.git`
+    - `git clone https://github.com/mauriciobenjamin700/SMEIF-FRONT.git`ou `git@github.com:mauriciobenjamin700/SMEIF-FRONT.git`
 3. Tenha o Docker Instalado no Seu Sistema Operacional
 4. Inicialize as Aplicações usando o Comando:
     - `docker-compose up --build -d`

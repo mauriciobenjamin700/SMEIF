@@ -1,0 +1,30 @@
+services:
+
+  api:
+    container_name: api-smeif
+    build:
+      context: ./SMEIF-API
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "5009:5000"
+    volumes:
+      - ./SMEIF-API:/api # Bind mount para desenvolvimento
+    depends_on:
+      - database
+    env_file:
+      - ./SMEIF-API/.env
+
+  database:
+    container_name: database-smeif
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    ports:
+      - "5439:5432"
+    volumes:
+      -  db_volume:/var/lib/postgresql/data
+    restart: always
+  
+volumes:
+  db_volume:
