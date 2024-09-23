@@ -29,6 +29,18 @@ A Figura abaixo ilustra como a estrutura do projeto está definida, com base em 
 
 ![Repositório](/docs/images/repository.png)
 
+### Banco de Dados
+
+A Figura a baixo ilustra como está a estrutura do banco de dados
+
+![Diagrama do Banco de Dados](/docs/images/der.png)
+
+### Classes
+
+A Figura a baixo ilustra como está a estrutura das classes e suas funcionalidades na aplicação
+
+![Diagrama das Classes](/docs/images/class.png)
+
 ## Tecnologias
 
 Para este projeto foram definidas as seguintes tecnologias com base em suas respectivas funcionalidades:
