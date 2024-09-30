@@ -1,5 +1,5 @@
 # Use the official PostgreSQL image as base
-FROM postgres:16
+FROM postgres:12
 
 # Instale utilitários necessários
 RUN apt-get update && apt-get install -y cron nano

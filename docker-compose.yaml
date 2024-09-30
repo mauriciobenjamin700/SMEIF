@@ -1,30 +1,47 @@
 services:
 
+  frontend:
+    image: smeif-front
+    build:
+      context: ./SMEIF-FRONT
+      dockerfile: Dockerfile  
+    container_name: smeif-front
+    ports:
+      - "3009:3000"
+    networks:
+      - smeif-network
+
   api:
-    container_name: api-smeif
+    image: smeif-api
     build:
       context: ./SMEIF-API
-      dockerfile: Dockerfile
-    restart: always
+      dockerfile: Dockerfile  
+    container_name: smeif-api
     ports:
       - "5009:5000"
-    volumes:
-      - ./SMEIF-API:/api # Bind mount para desenvolvimento
+    networks:
+      - smeif-network
     depends_on:
       - database
     env_file:
       - ./SMEIF-API/.env
 
   database:
-    container_name: database-smeif
+    image: postgres
     build:
       context: ./database
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile  
+    container_name: smeif-database
     ports:
       - "5439:5432"
+    networks:
+      - smeif-network
     volumes:
-      -  db_volume:/var/lib/postgresql/data
-    restart: always
-  
+      - db_volume:/var/lib/postgresql/data      
+
+networks:
+  smeif-network:
+    driver: bridge
+
 volumes:
   db_volume:
