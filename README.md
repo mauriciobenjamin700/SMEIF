@@ -22,6 +22,10 @@ Para executar o projeto, você deve seguir uma série de passos, sendo eles:
     - `docker-compose up --build -d`
     - ou
     - `docker compose up --build -d`
+5. Desligue a Aplicação usando o comando:
+    - `docker-compose down`
+    - ou
+    - `docker compose down`
 
 ## Visualização Estrutura do Projeto
 
