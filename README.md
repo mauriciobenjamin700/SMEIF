@@ -63,3 +63,8 @@ Para este projeto foram definidas as seguintes tecnologias com base em suas resp
 - chore: alterações no processo de compilação ou ferramentas e bibliotecas auxiliares, como geração de documentação.
 - perf: Mudança de Código que melhora desempenho.
 - build: alterações que afetam o sistema de compilação ou dependências externas (npm, gulp, broccoli).
+
+## Links Externos
+
+- [Figma](https://www.figma.com/design/A6AqoHk9okhMbyETmZpm1B/TCC-SMEIF?node-id=81-384&node-type=canvas&t=ssXu3bUoLkUsTUne-0)
+- [Overleaf](https://pt.overleaf.com/read/btzknfnqkdgk#1ac8c2)
