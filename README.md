@@ -27,6 +27,8 @@ Para executar o projeto, você deve seguir uma série de passos, sendo eles:
     - ou
     - `docker compose down`
 
+6. Em caso de erro, leia os arquivos `README.md` espalhados em cada repositório para entender o motivo do erro e como corrigir.
+
 ## Visualização Estrutura do Projeto
 
 A Figura abaixo ilustra como a estrutura do projeto está definida, com base em uma arquitetura cliente-servidor
